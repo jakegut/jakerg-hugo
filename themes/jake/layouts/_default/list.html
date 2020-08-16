@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+	<head>
+		<title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		<div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns" >
+						{{ partial "header.html" .}}
+					</div>
+        </div>
+				<div class="row">
+					<div class="twelve columns" >
+						<h2 id=>{{ .Title }}</h2>
+					</div>
+        </div>
+        {{ range .Pages.GroupByDate "2006" }}
+        <div class="row">
+          <div class="two columns">
+            <h3 style="font-weight: bold;">{{ .Key }}</h3>
+          </div>
+          <div class="ten columns">
+            {{ range .Pages }}
+            <div class="row post-list-item">
+              <div class="three columns">
+                <h4 >{{ .Date.Format "Jan 01" }}</h4>
+              </div>
+              <div class="nine columns">
+                <h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+              </div>
+
+              <!-- <div class="post-list-item">
+                <div class="post-header">
+                  <h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                  <h5 class="">Posted on {{ .Date.Format "2006-01-02" }}</h5>
+                </div>
+                <div class="post-summary"><p>{{ .Summary }}</p></div>
+                <div class="post-list-footer text-center">
+                  <a href="{{ .Permalink }}">{{ i18n "read-more" }}</a>
+                </div>
+              </div> -->
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+				<!--  -->
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+	</body>
+</html>

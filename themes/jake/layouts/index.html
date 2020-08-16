@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		<title> {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+
+	</head>
+	<body>    
+    <div class="wrapper center">
+      <div class="container ">
+        <div class="row">
+          <div class="twelve columns text-centered">
+            <h1 id="user-name">{{ .Site.Params.Name }}</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns text-centered">
+            <h5>Computer Science Undergraduate and Researcher</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns text-centered">
+            {{ partial "links.html" . }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns text-centered">
+            {{ partial "social.html" . }}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+	</body>
+</html>
+

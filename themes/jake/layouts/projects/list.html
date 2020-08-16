@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+	<head>
+		<title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		<div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns" />
+						{{ partial "header.html" .}}
+					</div>
+        </div>
+				<div class="row">
+					<div class="twelve columns" />
+						<h2 id=>{{ .Title }}</h2>
+					</div>
+        </div>
+        {{ range .Pages}}
+        <div class="row project-list-item">
+          <div class="four columns center">
+            <a href="{{ .Params.redirect_url }}"><img class="project-img text-centered" src="{{ .Params.image_url }}"/></a>
+          </div>
+          <div class="eight columns center" style="justify-content: left;">
+            <div >
+              <a href="{{ .Params.redirect_url }}"><h3 style="font-weight: bold;">{{ .Title }}</h3></a>
+              <h5>{{ .Description }}</h5>
+              {{with .Params.stack }}
+              <ul class="header" style="font-size: 2rem;">
+                |
+                {{ range . }}
+                <li>{{.}} |</li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+				<!--  -->
+        </div>
+      {{ partial "footer.html" . }}
+    </div>
+	</body>
+</html>

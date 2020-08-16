@@ -1,0 +1,23 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jake Gutierrez"
+theme = "jake"
+
+[params]
+  Name = "Jake Gutierrez"
+  HeaderUsername = "jakerg"
+  About = "Test of theme"
+  GithubID = "jakeryang"
+  LinkedInID = "jakegut"
+  Email = "jakegut0108@gmail.com"
+
+[menu]
+  [[menu.header]]
+    name = "Projects"
+    weight = 5
+    url = "/projects"
+  [[menu.header]]
+    name = "Posts"
+    weight = 5
+    url = "/posts"
+  
