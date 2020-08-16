@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Jake Gutierrez"
 theme = "jake"
+PygmentsCodeFences = true
 
 [params]
   Name = "Jake Gutierrez"
@@ -18,6 +19,11 @@ theme = "jake"
     url = "/projects"
   [[menu.header]]
     name = "Posts"
-    weight = 5
+    weight = 4
     url = "/posts"
+  [[menu.header]]
+    name = "Resume"
+    weight = 6
+    url = "/resume.pdf"
+  
   

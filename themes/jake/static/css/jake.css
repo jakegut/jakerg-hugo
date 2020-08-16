@@ -14,6 +14,14 @@ body {
 	color: white;
 }
 
+a{
+  color: #00C2FF;
+}
+
+a:hover{
+  color: #008EBB;
+}
+
 .wrapper{
   display: flex;
   min-height: 100vh;
@@ -88,4 +96,19 @@ footer{
   .project-list-item{
     display: flex;
   }
+}
+
+code{
+  background: none;
+  border: none;
+  border-radius: none;
+}
+
+code, kbd, pre, samp{
+  font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+}
+
+p>img{
+  margin: 0 auto;
+  display: block;
 }
