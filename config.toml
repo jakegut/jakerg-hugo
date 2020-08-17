@@ -1,13 +1,11 @@
 baseURL = "https://nostalgic-villani-d5bbe6.netlify.app/"
 languageCode = "en-us"
 title = "Jake Gutierrez"
-theme = "jake"
+theme = "jake-hugo-theme"
 PygmentsCodeFences = true
 
 [params]
   Name = "Jake Gutierrez"
-  HeaderUsername = "jakerg"
-  About = "Test of theme"
   GithubID = "jakeryang"
   LinkedInID = "jakegut"
   Email = "jakegut0108@gmail.com"
