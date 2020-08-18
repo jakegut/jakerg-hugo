@@ -2,7 +2,9 @@ baseURL = "https://jakegut.com/"
 languageCode = "en-us"
 title = "Jake Gutierrez"
 theme = "jake-hugo-theme"
+
 PygmentsCodeFences = true
+PygmentsStyle = "dracula"
 
 [params]
   Name = "Jake Gutierrez"

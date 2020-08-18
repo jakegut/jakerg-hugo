@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>http://example.org/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-  </url>
-  
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://jakegut.com/posts/gatsby-to-hugo/</loc><lastmod>2020-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/projects/gitlytics/</loc><lastmod>2020-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/</loc><lastmod>2020-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/posts/</loc><lastmod>2020-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/projects/</loc><lastmod>2020-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/projects/zeldagan/</loc><lastmod>2019-08-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/projects/simplepaintball/</loc><lastmod>2019-07-15T12:09:01-05:00</lastmod></url><url><loc>https://jakegut.com/posts/rstudio-tutorial-stacked-and-side-by-side-bar-graphs/</loc><lastmod>2019-03-27T21:36:10-05:00</lastmod></url><url><loc>https://jakegut.com/posts/rstudio-tutorial-histograms-and-boxplots/</loc><lastmod>2019-03-19T11:14:31-05:00</lastmod></url><url><loc>https://jakegut.com/projects/revolutionaryrobotics/</loc><lastmod>2018-02-27T00:41:23+00:00</lastmod></url><url><loc>https://jakegut.com/categories/</loc></url><url><loc>https://jakegut.com/tags/</loc></url></urlset>
