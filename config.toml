@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Jake Gutierrez"
 theme = "jake-hugo-theme"
 
+googleAnalytics = "UA-113542849-4" 
+
 PygmentsCodeFences = true
 PygmentsStyle = "dracula"
 
