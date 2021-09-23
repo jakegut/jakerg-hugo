@@ -16,6 +16,7 @@ unsafe= true
   GithubID = "jakegut"
   LinkedInID = "jakegut"
   Email = "jakegut0108@gmail.com"
+  Subtitle = "Software Engineer at Rivet"
 
 [menu]
   [[menu.header]]
