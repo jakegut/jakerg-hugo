@@ -3,6 +3,7 @@ name: Build LaTeX Resume
 on:
   push:
     paths:
+     - ".github/workflows/build.yml"
      - "**.tex"
      - "**.cls"
 
