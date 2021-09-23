@@ -15,8 +15,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
-          pre_compile: "tlmgr update --self && tlmgr update --all"
+          root_file: main.tex
+          # pre_compile: "tlmgr update --self && tlmgr update --all"
           post_compile: "latexmk -c"
           latexmk_use_xelatex: true
           working_directory: "resume/"
