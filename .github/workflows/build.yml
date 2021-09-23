@@ -24,15 +24,18 @@ jobs:
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
-      - name: Copy PDF to artifacts and public
+      - name: Copy PDF to artifacts and public and Cleanup
         run: |
           cp resume/main.pdf resume/artifacts/resume-${{ steps.date.outputs.date }}.pdf
           cp resume/main.pdf public/resume.pdf
+
+          rm resume/main.pdf
+          rm resume/main.xdv
       - name: Push changes to GitHub
         run: |
           git config --global user.name "Jake Gutierrez"
           git config --global user.email "jakegut0108@gmail.com"
 
           git add .
-          git commit -m "[CI] Update resume.pdf"
-          git push
+          git commit -m "[CD] Update resume.pdf"
+          git push origin HEAD:master
