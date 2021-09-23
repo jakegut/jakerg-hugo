@@ -30,7 +30,7 @@ jobs:
       - name: Copy PDF to artifacts and public and Cleanup
         run: |
           cp resume/main.pdf resume/artifacts/resume-${{ steps.date.outputs.date }}.pdf
-          cp resume/main.pdf public/resume.pdf
+          cp resume/main.pdf static/resume.pdf
 
           rm resume/main.pdf
           rm resume/main.xdv
