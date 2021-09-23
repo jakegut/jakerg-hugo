@@ -1,0 +1,159 @@
+\documentclass[margin, line]{res}
+
+% \usepackage{feynmf}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+\pagenumbering{gobble}
+
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\hypersetup{colorlinks=true, urlcolor=coolblack}
+
+\newcommand{\li}{https://linkedin.com/in/jakegut}
+\newcommand{\gh}{https://github.com/jakegut}
+\newcommand{\personalsite}{https://jakegut.com}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+\newsectionwidth{1in}
+
+\newcommand{\resumeSubheading}[4]{
+
+\begin{tabular*}{1.01\textwidth}{@{\hspace{-4pt}}l @{\extracolsep{\fill}} r}
+\textbf{#1} & #2 \\
+      #3 &  #4 
+\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\begin{tabular*}{1.01\textwidth}{@{\hspace{-4pt}}l @{\extracolsep{\fill}} r}
+    #1 & #2 
+\end{tabular*}\vspace{-7pt}
+}
+
+% if using pdflatex:
+% \setlength{\pdfpagewidth}{\paperwidth}
+% \setlength{\pdfpageheight}{\paperheight}
+%
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{
+    \vspace*{-.5in}
+	{\huge Jake Gutierrez}
+	\hspace*{.1in}
+	\vspace*{.1in}
+	}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3.17in}p{4in}}
+	\href{\li}{linkedin.com/in/jakegut} & \href{\gh}{github.com/jakegut}\\
+    \href{mailto:jakegut0108@gmail.com}{jakegut0108@gmail.com} & \href{\personalsite}{jakegut.com}\\
+     (979) 676-3030
+    %  (123) 456-7890
+        % & Available to start from Nov 1st\\
+\end{tabular}
+
+\section{\sc Work Experience}
+
+\vspace{2pt}
+                 
+\resumeSubheading{{\bf Rivet Health}}{Sandy, UT}
+                 {Software Engineer}{June 2021 -- Present}
+                 
+\begin{list2}
+\item{Contributed to an established SaaS application in Angular, Node.js, and Typescript}
+\item{Interacted with third-party APIs to synchronize patient, payers, and appointment information}
+\item{Wrote and performed migrations on a PostgreSQL database}
+\end{list2}
+
+\resumeSubheading{{\bf Texas A\&M Engineering Experiment Station}}{College Station, TX}
+                 {Software Developer}{June 2020 -- May 2021}
+
+\begin{list2}
+\item{Designed and implemented a REST API to store data from learning management systems }
+\item{Developed full-stack web application using Python with Flask, React and PostgreSQL that asynchronously analyzes GitHub interactions }
+\item{Designed API end points to provide data visualizations of GitHub participation }
+\end{list2}
+
+\resumeSubheading{Southwestern University}{Georgetown, TX}
+             {Artificial Intelligence Research Assistant}{May 2019 -- July 2020}
+
+\begin{list2}
+\item{Innovated methods in Java and Python to generate video game dungeons based off of \emph{The Legend of Zelda}}
+\item{Conducted a user study to compare AI generated and human-produced dungeons}
+\item{Presented results to the World Conference on Computation Intelligence in a published paper and presentation}
+\end{list2}
+
+% \vspace{0.15in}
+\section{\sc Education}
+
+\vspace{2pt}
+
+\resumeSubheading{Southwestern University}{Georgetown, TX}
+             {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
+
+\resumeSubheading{Blinn College}{Bryan, TX}
+             {Associate of Arts in Liberal Arts}{Aug. 2014 -- May 2018}
+
+\section{\sc Projects}
+
+\resumeSubSubheading{\textbf{Southwestern University Tutor App}}{Jan. 2021 -- June 2021}
+
+\begin{list2}
+\item{Designed and developed a RESTful API using FastAPI and PostgreSQL}
+\item{Utilized Docker and GitHub Actions to implement a CI/CD workflow to deploy to Google Cloud Run}
+\item{Led a team of three-members to develop the backend through pair programming and code reviews}
+\item{Implemented Scrum and Kanban models for a six person team to speed up development}
+\end{list2}
+
+\resumeSubSubheading{\textbf{Gitlytics}}{June 2020 -- May 2021}
+
+\begin{list2}
+\item{Designed a full-stack web application and developed it using Flask with React}
+\item{Utilized GitHub OAuth and Webhooks to get data from users' repositories}
+\item{Visualized GitHub data to show collaboration between contributors}
+\item{Implemented asynchronous tasks with Celery and Redis}
+\end{list2}
+
+
+\section{\sc Technical Skills}
+
+\textbf{Languages}{: Java, Python, SQL (Postgres), TypeScript, HTML/CSS, \LaTeX} \\
+\textbf{Frameworks}{: React, Angular, Node.js, Flask, FastAPI} \\
+\textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Make} \\
+
+
+\vspace{0.2in}
+
+\end{resume}
+\end{document}

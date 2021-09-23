@@ -1,0 +1,37 @@
+name: Build LaTeX Resume
+
+on:
+  push:
+    paths:
+     - "**.tex"
+     - "**.cls"
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Up Git Repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
+          pre_compile: "tlmgr update --self && tlmgr update --all"
+          post_compile: "latexmk -c"
+          latexmk_use_xelatex: true
+          working_directory: "resume/"
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
+      - name: Copy PDF to artifacts and public
+        run: |
+          cp resume/main.pdf resume/artifacts/resume-${{ steps.date.outputs.date }}.pdf
+          cp resume/main.pdf public/resume.pdf
+      - name: Push changes to GitHub
+        run: |
+          git config --global user.name "Jake Gutierrez"
+          git config --global user.email "jakegut0108@gmail.com"
+
+          git add .
+          git commit -m "[CI] Update resume.pdf"
+          git push
