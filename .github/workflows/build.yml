@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Set Up Git Repository
         uses: actions/checkout@v1
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
@@ -33,9 +36,13 @@ jobs:
           rm resume/main.xdv
       - name: Push changes to GitHub
         run: |
-          git config --global user.name "Jake Gutierrez"
-          git config --global user.email "jakegut0108@gmail.com"
+          git config --local user.name "Jake Gutierrez"
+          git config --local user.email "jakegut0108@gmail.com"
 
           git add .
           git commit -m "[CD] Update resume.pdf"
-          git push origin HEAD:master
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
