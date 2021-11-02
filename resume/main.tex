@@ -1,4 +1,4 @@
-\documentclass[margin, line]{res}
+\documentclass[margin, 11pt]{res}
 
 % \usepackage{feynmf}
 \usepackage[usenames, dvipsnames]{color}
@@ -7,8 +7,18 @@
 
 \usepackage{fontspec}
 
-\usepackage[sfdefault]{noto-sans}
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold},DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+% \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textheight}{0.5in}
 
 \pagenumbering{gobble}
 
@@ -17,7 +27,7 @@
 \definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
 \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
-\hypersetup{colorlinks=true, urlcolor=coolblack}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
 
 \newcommand{\li}{https://linkedin.com/in/jakegut}
 \newcommand{\gh}{https://github.com/jakegut}
@@ -35,7 +45,7 @@
 
 \begin{tabular*}{1.01\textwidth}{@{\hspace{-4pt}}l @{\extracolsep{\fill}} r}
 \textbf{#1} & #2 \\
-      #3 &  #4 
+      {#3} &  {#4}
 \end{tabular*}\vspace{-2pt}
 }
 
@@ -57,6 +67,7 @@
 		\setlength{\leftmargin}{0.17in}}}{\end{list}}
 \newenvironment{list2}{
 	\begin{list}{$\bullet$}{%
+	    \small
 		\setlength{\itemsep}{0in}
 		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
 		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
@@ -65,22 +76,26 @@
 \begin{document}
 
 \name{
-    \vspace*{-.5in}
-	{\huge Jake Gutierrez}
-	\hspace*{.1in}
-	\vspace*{.1in}
+	{\Huge \scshape Jake Gutierrez}
+	\vspace{2pt}
 	}
+\address{
+    \small 123-456-7890 $|$ 
+    \href{mailto:jakegut0108@gmail.com}{jakegut0108@gmail.com} $|$ 
+    \href{\li}{linkedin.com/in/jakegut} $|$
+    \href{\gh}{github.com/jakegut}
+}
 
 \begin{resume}
-\section{\sc Contact Information}
-\vspace{.05in}
-\begin{tabular}{@{}p{3.17in}p{4in}}
-	\href{\li}{linkedin.com/in/jakegut} & \href{\gh}{github.com/jakegut}\\
-    \href{mailto:jakegut0108@gmail.com}{jakegut0108@gmail.com} & \href{\personalsite}{jakegut.com}\\
-     (979) 676-3030
-    %  (123) 456-7890
-        % & Available to start from Nov 1st\\
-\end{tabular}
+% \section{\sc Contact Information}
+% \vspace{.05in}
+% \begin{tabular}{@{}p{3.17in}p{4in}}
+% 	\href{\li}{linkedin.com/in/jakegut} & \href{\gh}{github.com/jakegut}\\
+%     \href{mailto:jakegut0108@gmail.com}{jakegut0108@gmail.com} & \href{\personalsite}{jakegut.com}\\
+%      (979) 676-3030
+%     %  (123) 456-7890
+%         % & Available to start from Nov 1st\\
+% \end{tabular}
 
 \section{\sc Work Experience}
 
@@ -90,9 +105,11 @@
                  {Software Engineer}{June 2021 -- Present}
                  
 \begin{list2}
-\item{Contributed to an established SaaS application in Angular, Node.js, and Typescript}
+\item{Contributed to an established SaaS application in Angular, Node.js, and TypeScript}
 \item{Interacted with third-party APIs to synchronize patient, payers, and appointment information}
 \item{Troubleshooted and optimized PostgreSQL queries}
+\item{Maintained Docker images to ensure a consistent developer environment}
+\item{Utilized Datadog and Sentry to identify pain-points in our application}
 \item{Migrated sections of Rivet's build system from Make to Bazel to increase build and testing performance}
 \end{list2}
 
@@ -150,7 +167,7 @@
 
 \textbf{Languages}{: Java, Python, SQL (Postgres), TypeScript, HTML/CSS, \LaTeX} \\
 \textbf{Frameworks}{: React, Angular, Node.js, Flask, FastAPI} \\
-\textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Make} \\
+\textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Make, Bazel} \\
 
 
 \vspace{0.2in}
