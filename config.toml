@@ -20,13 +20,13 @@ unsafe= true
 
 [menu]
   [[menu.header]]
+    name = "About"
+    weight = 4
+    url = "/about"
+  [[menu.header]]
     name = "Projects"
     weight = 5
     url = "/projects"
-  [[menu.header]]
-    name = "Posts"
-    weight = 4
-    url = "/posts"
   [[menu.header]]
     name = "Resume"
     weight = 6
