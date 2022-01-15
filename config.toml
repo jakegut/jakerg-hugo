@@ -5,11 +5,22 @@ theme = "jake-hugo-theme"
 
 googleAnalytics = "UA-113542849-4" 
 
-PygmentsCodeFences = true
-PygmentsStyle = "dracula"
-
 [markup.goldmark.renderer]
 unsafe= true
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
 
 [params]
   Name = "Jake Gutierrez"
@@ -23,10 +34,6 @@ unsafe= true
     name = "About"
     weight = 4
     url = "/about"
-  [[menu.header]]
-    name = "Projects"
-    weight = 5
-    url = "/projects"
   [[menu.header]]
     name = "Resume"
     weight = 6
