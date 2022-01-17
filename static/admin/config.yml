@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jakeryang/jakerg-hugo
+  repo: jakegut/jakerg-hugo
 media_folder: static/images
 public_folder: /images
 collections:
@@ -13,6 +13,7 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Short name', name: 'shortname', widget: 'string'}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true}
       - { label: 'Body', name: 'body', widget: 'markdown' }
