@@ -1,6 +1,7 @@
 ---
 title: 'RStudio Tutorial: Histograms and Boxplots'
 date: '2019-03-19T11:14:31-05:00'
+shortname: 'r-hist-box'
 draft: false
 ---
 This tutorial will go over how to use histograms and boxplots in RStudio. This tutorial assumes you know the basics of R and RStudio. Please follow this series on [YouTube to grasp the basics of R and RStudio](https://www.youtube.com/playlist?list=PLfd9sQN8B2atKdk-GhzyYvxy9ntLI0HZo).

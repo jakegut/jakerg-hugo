@@ -1,6 +1,7 @@
 ---
 title: "Gatsby to Hugo"
 date: 2020-08-15T12:09:01-05:00
+shortname: "g2h"
 draft: false
 ---
 

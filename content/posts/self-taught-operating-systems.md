@@ -1,6 +1,7 @@
 ---
 title: Self Taught Operating Systems
 date: 2022-01-12T02:05:09.972Z
+shortname: 'st-os'
 draft: false
 ---
 ## tl;dr

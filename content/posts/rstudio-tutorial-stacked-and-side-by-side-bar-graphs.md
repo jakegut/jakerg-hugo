@@ -1,6 +1,7 @@
 ---
 title: 'RStudio Tutorial: Stacked and Side-by-Side Bar Graphs'
 date: '2019-03-27T21:36:10-05:00'
+shortname: 'r-stacked-sbs'
 draft: false
 ---
 This tutorial will go over how to create stacked and side-by-side bar charts in RStudio with ggplot.
