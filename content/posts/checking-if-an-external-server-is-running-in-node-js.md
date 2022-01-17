@@ -38,3 +38,5 @@ const checkService = async (host: number, port: string, timeout: number) => {
 
 A somewhat annoying aspect of JavaScript are event listeners. They offer a little convenience, where you can setup a socket and then add listeners to handle different tasks. In this case, they didn't allow us to "await" until a connection was established, we had to set up a callback. Additionally, we can't directly return from a callback. For instance, in the `socket.connect` callback, we can return a value, but it won't be picked up by the outer function since it will be out of scope. We could add a variable outside of the callback and update it in the callback, but that introduces side effects. The nice thing with Promises is that they provide callback functions in an "on success" and "on error" situation. These will either return a value or throw an error.
 
+This code is heavily inspired from the [is-port-reachable](https://github.com/sindresorhus/is-port-reachable/blob/main/index.js) npm package.
+
