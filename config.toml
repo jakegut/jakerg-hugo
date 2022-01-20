@@ -3,10 +3,14 @@ languageCode = "en-us"
 title = "Jake Gutierrez"
 theme = "jake-hugo-theme"
 
-googleAnalytics = "UA-113542849-4" 
-
 [markup.goldmark.renderer]
 unsafe= true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 
 [markup]
   [markup.highlight]
@@ -22,21 +26,29 @@ unsafe= true
     style = 'monokai'
     tabWidth = 4
 
+[Author]
+  name = "Jake Gutierrez"
+
 [params]
   Name = "Jake Gutierrez"
   GithubID = "jakegut"
   LinkedInID = "jakegut"
   Email = "jakegut0108@gmail.com"
   Subtitle = "Software Engineer at Rivet"
+  GoatCode = "jakegut"
+  logo = "/favicon-32x32.png"
+
 
 [menu]
   [[menu.header]]
     name = "About"
     weight = 4
     url = "/about"
+    identifier = "about"
   [[menu.header]]
     name = "Resume"
     weight = 6
     url = "/resume.pdf"
+    identifier="goat_resume"
   
   
