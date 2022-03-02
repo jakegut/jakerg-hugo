@@ -4,7 +4,7 @@ shortname: ext-svr
 date: 2022-01-17T19:51:33.945Z
 draft: false
 ---
-At Rivet, our testing process involves external services such as our PostgreSQL, ElasticSearcn and sometimes an API to mock third-party services. Each test specifies which services it depends on, we then start those services and run a health check to see if they're running before the test begins.
+At Rivet, our testing process involves external services such as our PostgreSQL, ElasticSearch and sometimes an API to mock third-party services. Each test specifies which services it depends on, we then start those services and run a health check to see if they're running before the test begins.
 
 Some services have a nice way to check if they're running. PostgreSQL has `pg_isready` with a timeout parameter and check for a zero exit code and ElasticSearch has the `/_cluster/health` which we can check for a status code of 200. However, sometimes a service doesn't provide a built-in way to check for the health and/or status of a service. An alternative way is to see if the server itself is ready to accept connections with a socket:
 
