@@ -41,13 +41,18 @@ unsafe= true
 
 [menu]
   [[menu.header]]
-    name = "About"
+    name = "Now"
     weight = 4
-    url = "/about"
-    identifier = "about"
+    url = "/now"
+    identifier = "now"
+  [[menu.header]]
+    name = "Posts"
+    weight = 6
+    url = "/posts"
+    identifier = "posts"
   [[menu.header]]
     name = "Resume"
-    weight = 6
+    weight = 7
     url = "/resume.pdf"
     identifier="goat_resume"
   
