@@ -10,9 +10,9 @@ I'm currently exapanding my Computer Science major with more college-level cours
 
 I'm trying to track my progress using [notion.](https://seed-session-edb.notion.site/9706eb0f1e3d494aba9e5ef2ab684ce7?v=6590f35a9cff4bc7a8fb0380cfe0ca4a) Check out my post on [Self Guided Operating Systems.](/posts/self-guided-operating-systems/)
 
-In my world I'm:
+In my world I:
 
-- Getting married (+ honeymoon)
+- Got married
 - About to move to Katy, TX
 - Rewatching Star Trek: Voyager
 - Hyperfixated on \<special interest\> (it's always changing, checkout the cycle below)
@@ -22,9 +22,9 @@ My cycle of special interests:
 
 - Graphics Programming
   - Game Development
-- Operating Systems **_<-- we are here_**
+- Operating Systems 
 - Distributed Systems
-- FOSS
+- FOSS **_<-- we are here_**
 
 <!-- <div id="player"></div> -->
 <!-- <script src="https://unpkg.com/webamp"></script>
@@ -44,4 +44,4 @@ My cycle of special interests:
     },}).renderWhenReady(document.getElementById("player"));
 </script> -->
 
-_Last updated: May 21, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
+_Last updated: June 26, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
