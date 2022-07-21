@@ -2,7 +2,7 @@
 title: now
 ---
 
-I reside in Georgetown, TX. I'm working fully remote for a Utah-based, healthcare startup: Rivet.
+I'm working fully remote for a Utah-based, healthcare startup: Rivet.
 
 At Rivet, my primary work involves Node.js, Bazel, TypeScript and occasionally Go and Python; with a focus on Developer Experience, Build Systems, Internal Tools, and Infrastructure.
 
@@ -13,6 +13,7 @@ I'm trying to track my progress using [notion.](https://seed-session-edb.notion.
 In my world I:
 
 - Got married
+- Working on a [Speech-to-Text Plugin](https://github.com/jakegut/mattermost-stt-plugin) for [Mattermost](https://mattermost.com/)
 - About to move to Katy, TX
 - Rewatching Star Trek: Voyager
 - Hyperfixated on \<special interest\> (it's always changing, checkout the cycle below)
@@ -21,9 +22,9 @@ In my world I:
 My cycle of special interests:
 
 - Graphics Programming
-  - Game Development
 - Operating Systems 
 - Distributed Systems
+- Compilers and Interpreters
 - FOSS **_<-- we are here_**
 
 <!-- <div id="player"></div> -->
@@ -44,4 +45,4 @@ My cycle of special interests:
     },}).renderWhenReady(document.getElementById("player"));
 </script> -->
 
-_Last updated: June 26, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
+_Last updated: July 21, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
