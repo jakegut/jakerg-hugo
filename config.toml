@@ -1,7 +1,7 @@
 baseURL = "https://jakegut.com/"
 languageCode = "en-us"
 title = "Jake Gutierrez"
-theme = "jake-hugo-theme"
+theme = "jake-hugo"
 
 [markup.goldmark.renderer]
 unsafe= true

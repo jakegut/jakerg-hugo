@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jh45si');
+  src:  url('fonts/icomoon.eot?jh45si#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jh45si') format('truetype'),
+    url('fonts/icomoon.woff?jh45si') format('woff'),
+    url('fonts/icomoon.svg?jh45si#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-file-text:before {
+  content: "\f15c";
+}
+.icon-xing-square:before {
+  content: "\f169";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-slack:before {
+  content: "\f198";
+}
+.icon-reddit-square:before {
+  content: "\f1a2";
+}
+.icon-codepen:before {
+  content: "\f1cb";
+}
+.icon-paypal:before {
+  content: "\f1ed";
+}
+.icon-facebook-official:before {
+  content: "\f230";
+}
+.icon-gitlab:before {
+  content: "\f296";
+}
+.icon-telegram:before {
+  content: "\f2c6";
+}
+.icon-angular:before {
+  content: "\e900";
+  color: #dd0031;
+}
+.icon-bootstrap:before {
+  content: "\e901";
+  color: #563d7c;
+}
+.icon-bower:before {
+  content: "\e902";
+  color: #ef5734;
+}
+.icon-cplusplus:before {
+  content: "\e903";
+  color: #00599c;
+}
+.icon-css3:before {
+  content: "\e904";
+  color: #1572b6;
+}
+.icon-d3-dot-js:before {
+  content: "\e905";
+  color: #f9a03c;
+}
+.icon-django:before {
+  content: "\e906";
+}
+.icon-docker:before {
+  content: "\e907";
+  color: #1488c6;
+}
+.icon-dot-net:before {
+  content: "\e908";
+  color: #5c2d91;
+}
+.icon-eclipseide:before {
+  content: "\e909";
+  color: #2c2255;
+}
+.icon-flask:before {
+  content: "\e90a";
+}
+.icon-gatsby:before {
+  content: "\e90b";
+  color: #639;
+}
+.icon-godotengine:before {
+  content: "\e90c";
+  color: #478cbf;
+}
+.icon-graphql:before {
+  content: "\e90d";
+  color: #e10098;
+}
+.icon-html5:before {
+  content: "\e90e";
+  color: #e34f26;
+}
+.icon-intellijidea:before {
+  content: "\e90f";
+}
+.icon-java:before {
+  content: "\e910";
+  color: #007396;
+}
+.icon-javascript:before {
+  content: "\e911";
+  color: #f7df1e;
+}
+.icon-jenkins:before {
+  content: "\e912";
+  color: #d24939;
+}
+.icon-laravel:before {
+  content: "\e913";
+  color: #ff2d20;
+}
+.icon-linux:before {
+  content: "\e914";
+  color: #fcc624;
+}
+.icon-mongodb:before {
+  content: "\e915";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e916";
+  color: #4479a1;
+}
+.icon-node-dot-js:before {
+  content: "\e917";
+  color: #393;
+}
+.icon-php:before {
+  content: "\e918";
+  color: #777bb4;
+}
+.icon-postgresql:before {
+  content: "\e919";
+  color: #336791;
+}
+.icon-python:before {
+  content: "\e91a";
+  color: #3776ab;
+}
+.icon-pytorch:before {
+  content: "\e91b";
+  color: #ee4c2c;
+}
+.icon-react:before {
+  content: "\e91c";
+  color: #61dafb;
+}
+.icon-redis:before {
+  content: "\e91d";
+  color: #d82c20;
+}
+.icon-redux:before {
+  content: "\e91e";
+  color: #764abc;
+}
+.icon-ruby:before {
+  content: "\e91f";
+  color: #cc342d;
+}
+.icon-rust:before {
+  content: "\e920";
+}
+.icon-sass:before {
+  content: "\e921";
+  color: #c69;
+}
+.icon-tableau:before {
+  content: "\e922";
+  color: #e97627;
+}
+.icon-tensorflow:before {
+  content: "\e923";
+  color: #ff6f00;
+}
+.icon-travisci:before {
+  content: "\e924";
+  color: #3eaaaf;
+}
+.icon-typescript:before {
+  content: "\e925";
+  color: #007acc;
+}
+.icon-unity:before {
+  content: "\e926";
+}
+.icon-visualstudio:before {
+  content: "\e927";
+  color: #5c2d91;
+}
+.icon-visualstudiocode:before {
+  content: "\e928";
+  color: #007acc;
+}
+.icon-vue-dot-js:before {
+  content: "\e929";
+  color: #4fc08d;
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
+}

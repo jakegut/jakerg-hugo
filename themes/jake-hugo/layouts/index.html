@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">{{ partial "header.html" .}}</div>
+        </div>
+        <div class="row main">
+          <div class="twelve columns">
+            <h2>Hello</h2>
+            <p>I'm Jake Gutierrez, a Software Engineer at Clever.</p>
+            <p>Check out what I'm doing <a href="/now">/now.</a></p>
+            <p>
+              View my <a href="/resume.pdf">/resume</a> for some of my
+              professional work.
+            </p>
+          </div>
+          <div class="twelve columns">
+            <h3>My Recent Posts</h3>
+            {{ range first 5 (where .Site.RegularPages "Section" "posts")}}
+            <a class="post-link" href="{{ .Permalink }}">
+              <div class="row post-list-item">
+                <h5 class="post-link">{{ .Title }}</h5>
+                <!-- <span>|</span> -->
+                <p class="date">{{ .Date.Format "Jan 02 2006" }}</p>
+              </div>
+            </a>
+            {{ end }}
+            <a href="/posts">Read more</a>
+          </div>
+        </div>
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>

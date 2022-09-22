@@ -1,6 +1,3 @@
 [submodule "themes/hugo-theme-nix"]
 	path = themes/hugo-theme-nix
 	url = https://github.com/jakeryang/hugo-theme-nix.git
-[submodule "themes/jake-hugo-theme"]
-	path = themes/jake-hugo-theme
-	url = https://github.com/jakeryang/jake-hugo-theme.git

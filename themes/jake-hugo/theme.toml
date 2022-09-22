@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Jake"
+license = "MIT"
+licenselink = "https://github.com/jakeryang/jakerg-hugo/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/jakeryang/jakerg-hugo"
+tags = ["simple", "minimal", "blog"]
+features = ["blog"]
+min_version = "0.41.0"
+
+[author]
+  name = "Jake Gutierrez"
+  homepage = "https://jakerg.me"
+
+# If porting an existing theme
+[original]
+  name = "Nix"
+  homepage = "https://github.com/LordMathis/hugo-theme-nix"
+  repo = "https://github.com/LordMathis/hugo-theme-nix"

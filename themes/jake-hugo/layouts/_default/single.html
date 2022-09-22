@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		<div class="wrapper">
+      <div class="container" >
+        <div class="row">
+          <div class="twelve columns" >
+						{{ partial "header.html" .}}
+					</div>
+        </div>
+				<div class="row main">
+					<div class="twelve columns" />
+            <h1>{{ .Title }}</h1>
+            <div class="post-content">
+                {{ $wrappedTable := printf "<div class=table-wrapper> ${1} </div>" }}
+
+                {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+            </div>
+            {{ if (isset .Params "nocomments")  }}
+            {{ else }}
+            <div class="post-comments">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+					</div>
+        </div>
+      </div>  
+			{{ partial "footer.html" . }}
+		</div>
+	</body>
+</html>

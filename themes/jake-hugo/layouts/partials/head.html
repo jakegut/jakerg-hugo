@@ -1,0 +1,53 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+{{ if eq (getenv "HUGO_ENV") "production" }}
+<meta name="robots" content="index,follow">
+{{ else }}
+<meta name="robots" content="noindex,nofollow">
+{{ end }}
+
+
+{{ hugo.Generator }}
+
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+  {{ end }}
+{{ end }}
+
+<!-- Custom CSS -->
+
+{{ $normalize := resources.Get "css/normalize.css" }}
+{{ $skeleton := resources.Get "css/skeleton.css" }}
+{{ $jake := resources.Get "css/jake.css" }}
+{{ $icomoon := resources.Get "css/icomoon.css" }}
+{{ $style := slice $icomoon $normalize $skeleton $jake | resources.Concat "bundle.css" | minify | fingerprint }}
+
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+
+<!-- GoatCode -->
+{{ if .Site.Params.GoatCode }}
+<script data-goatcounter='{{ printf "https://%s.goatcounter.com/count" .Site.Params.GoatCode }}'
+        async src="//gc.zgo.at/count.js"></script>
+{{ end }}
+
+<title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
+
+{{ partial "site_schema.html" . }}

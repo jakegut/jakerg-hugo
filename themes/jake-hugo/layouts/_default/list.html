@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		<div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns" >
+						{{ partial "header.html" .}}
+					</div>
+        </div>
+        <div class="main">
+				<div class="row">
+					<div class="twelve columns" >
+						<h2 id=>{{ .Title }}</h2>
+					</div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            {{ range .Pages }}
+            <a href="{{ .Permalink }}">
+            <div class="row post-list-item">
+              <div class="nine columns">
+                <h4 class="post-link">{{ .Title }}</h4>
+              </div>
+              <div class="three columns">
+                <h5 class="date">{{ .Date.Format "Jan 02 2006" }}</h5>
+              </div>
+            </div>
+          </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+				<!--  -->
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+	</body>
+</html>

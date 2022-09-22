@@ -1,0 +1,32 @@
+baseURL = "https://nostalgic-villani-d5bbe6.netlify.app/"
+languageCode = "en-us"
+title = "Jake Hugo Theme"
+theme = "jake-hugo-theme"
+PygmentsCodeFences = true
+
+themesdir = "../.."
+
+[params]
+  Name = "Jake Ryan"
+  GithubID = "your_github"
+  TwitterID = "your_twitter"
+  LinkedInID = "your_linkedin"
+  TelegramID = "your_telegram"
+  Email = "your_email"
+
+[menu]
+  [[menu.header]]
+    name = "About"
+    weight = 1
+    url = "/about"
+  [[menu.header]]
+    name = "Posts"
+    weight = 2
+    url = "/posts"
+  [[menu.header]]
+    name = "Projects"
+    weight = 3
+    url = "/projects"
+  
+  
+  

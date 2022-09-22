@@ -1,0 +1,53 @@
+<span id="social-links">
+{{ with .Site.Params.StackOverflowID }}
+<a href="https://stackoverflow.com/users/{{.}}" target="_blank" data-goatcounter-click name="StackExchange"><i class="fab icon-stackoverflow" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.SlackURL }}
+<a href="{{.}}" target="_blank" data-goatcounter-click name="Slack"><i class="fab icon-slack" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.TwitterID }}
+<a href="https://twitter.com/{{.}}" target="_blank" data-goatcounter-click name="Twitter"><i class="fab icon-twitter" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.FacebookID }}
+<a href="https://facebook.com/{{.}}" target="_blank" data-goatcounter-click name="Facebook"><i class="fab icon-facebook-official" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.BitbucketID }}
+<a href="https://bitbucket.org/{{.}}" target="_blank" data-goatcounter-click name="Bitbucket"><i class="fab icon-bitbucket" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.GithubID }}
+<a href="https://github.com/{{.}}" target="_blank" data-goatcounter-click name="GitHub"><i class="fab icon-github" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.GitlabId }}
+<a href="https://gitlab.com/{{.}}" target="_blank" data-goatcounter-click name="GitLab"><i class="fab icon-gitlab" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.CodepenID }}
+<a href="https://codepen.io/{{.}}" target="_blank" data-goatcounter-click name="Codepen"><i class="fab icon-codepen" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.LinkedInID }}
+<a href="https://linkedin.com/in/{{.}}" target="_blank" data-goatcounter-click name="LinkedIn"><i class="fab icon-linkedin-square" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.InstagramID }}
+<a href="https://instagram.com/{{.}}" target="_blank" data-goatcounter-click name="Instagram"><i class="fab icon-instagram" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.TelegramID }}
+<a href="https://t.me/{{.}}" target="_blank" data-goatcounter-click name="Telegram"><i class="fab icon-telegram" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.RedditID }}
+<a href="https://reddit.com/user/{{.}}" target="_blank" data-goatcounter-click name="Reddit"><i class="fab icon-reddit-square" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.Email }}
+<a href="mailto:{{.}}" target="_blank" data-goatcounter-click name="Email"><i class="fab icon-envelope" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.Phone }}
+<a href="tel:{{.}}" target="_blank" data-goatcounter-click name="Phone"><i class="fas icon-phone" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.PayPalMeID }}
+<a href="https://www.paypal.me/{{.}}" target="_blank" data-goatcounter-click name="PayPal.Me"><i class="fab icon-paypal" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.XingURL }}
+<a href="{{.}}" target="_blank" data-goatcounter-click name="XING"><i class="fab icon-xing-square" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Params.CvURL }}
+<a href="{{.}}" target="_blank" data-goatcounter-click name="Curriculum Vitae"><i class="fas icon-file-text" aria-hidden="true"></i></a>
+{{ end }}
+</span>
