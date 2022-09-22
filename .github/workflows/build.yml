@@ -33,7 +33,6 @@ jobs:
           cp resume/main.pdf static/resume.pdf
 
           rm resume/main.pdf
-          rm resume/main.xdv
       - name: Push changes to GitHub
         run: |
           git config --local user.name "Jake Gutierrez"
