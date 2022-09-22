@@ -2,9 +2,7 @@
 title: now
 ---
 
-I'm working fully remote for a Utah-based, healthcare startup: Rivet.
-
-At Rivet, my primary work involves Node.js, Bazel, TypeScript and occasionally Go and Python; with a focus on Developer Experience, Build Systems, Internal Tools, and Infrastructure.
+I'm working fully remote at [Clever](https://clever.com) as a Software Engineer on the Infrastructure team.
 
 I'm currently exapanding my Computer Science major with more college-level courses, with the goal of working on lower-level systems as a career.
 
@@ -15,7 +13,7 @@ In my world I:
 - Got married
 - Working on a [Speech-to-Text Plugin](https://github.com/jakegut/mattermost-stt-plugin) for [Mattermost](https://mattermost.com/)
 - About to move to Katy, TX
-- Rewatching Star Trek: Voyager
+- Watching GoT
 - Hyperfixated on \<special interest\> (it's always changing, checkout the cycle below)
 - Learning hand embroidery, cross-stitching
 
@@ -45,4 +43,4 @@ My cycle of special interests:
     },}).renderWhenReady(document.getElementById("player"));
 </script> -->
 
-_Last updated: July 21, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
+_Last updated: September 22, 2022. Inspired by [nownownow.com](https://nownownow.com/about)_
